@@ -11,43 +11,41 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="space-y-32">
+    <div className="space-y-24 md:space-y-32">
       {/* ================= HERO SECTION ================= */}
       <Reveal>
-      <section className="relative overflow-hidden py-32 text-center">
-        {/* background glow */}
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute top-1/3 left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-indigo-600/20 blur-3xl" />
-        </div>
+<section className="relative overflow-hidden py-20 md:py-32 text-center px-4">
+  <div className="absolute inset-0 -z-10">
+    <div className="absolute top-1/2 left-1/2 h-[280px] w-[280px] md:h-[500px] md:w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-indigo-600/20 blur-3xl" />
+  </div>
 
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-          Konten Ilegal di Ruang Digital
-        </h1>
+  <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight">
+    Konten Ilegal di Ruang Digital
+  </h1>
 
-        <p className="mt-6 text-lg md:text-xl text-slate-300 max-w-3xl mx-auto">
-          Menelaah dilema kebebasan berekspresi dan tanggung jawab
-          etika profesi dalam menghadapi dinamika ruang digital
-          modern.
-        </p>
+  <p className="mt-6 text-base sm:text-lg md:text-xl text-slate-300 max-w-3xl mx-auto">
+    Menelaah dilema kebebasan berekspresi dan tanggung jawab
+    etika profesi dalam menghadapi dinamika ruang digital modern.
+  </p>
 
-        <div className="mt-10 flex flex-wrap justify-center gap-4">
-          <Link
-            href="/articles"
-            className="px-8 py-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-500 transition"
-          >
-            Explore Articles
-          </Link>
+  <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+    <a
+      href="/articles"
+      className="px-8 py-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-500 transition"
+    >
+      Explore Articles
+    </a>
 
-          <a
-            href="/makalah-konten-ilegal.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-8 py-3 border border-slate-700 rounded-md text-slate-300 hover:text-white hover:border-slate-500 transition"
-          >
-            View Makalah (PDF)
-          </a>
-        </div>
-      </section>
+    <a
+      href="/makalah-konten-ilegal.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="px-8 py-3 border border-slate-700 rounded-md text-slate-300 hover:text-white hover:border-slate-500 transition"
+    >
+      View Makalah (PDF)
+    </a>
+  </div>
+</section>
       </Reveal>
       {/* ================= CONTEXT SECTION ================= */}
       <Reveal>
