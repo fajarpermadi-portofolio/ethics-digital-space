@@ -60,7 +60,7 @@ export default function AboutPage() {
         <li>Dhiya’ Ahnaf Dziban Fhadil E.</li>
         <li>Ahmad Fajar Permadi</li>
         <li>Ahmad Roffi Rizki Affandi</li>
-        <li>Moch. Hendra Agus Setiawan</li>
+        <li>Moch. Hendra Agus Setiyawan</li>
         <li>Rio Alan Nuari</li>
       </ul>
     </section>
